@@ -18,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ListingController::class, 'index']);
 
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
+Route::get('/listing/create', [ListingController::class, 'create']);
+Route::post('/listing/create', [ListingController::class, 'store']);
